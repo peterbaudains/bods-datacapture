@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  bods:
+    image: dockerfile
+    build: 
+      dockerfile: dockerfile
+    restart: always
+    environment:
+      - API_Key=${API_Key}
+    command: [/usr/src/app/setup_cron.sh]
+    volumes:
+      - ${HOST_DATA_VOLUME_PATH}:/data/
