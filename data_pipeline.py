@@ -4,7 +4,10 @@ import pandas as pd
 import os
 import logging
 import numpy as np
+from dotenv import load_dotenv
 from datetime import datetime
+
+load_dotenv()
 
 logging.basicConfig(filename='/data/data_pipeline.log',
                     filemode='a',
