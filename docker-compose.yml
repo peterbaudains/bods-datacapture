@@ -8,6 +8,10 @@ services:
     restart: always
     environment:
       - API_Key=${API_Key}
+      - BB_min_lon=${BB_min_lon}
+      - BB_min_lat=${BB_min_lat}
+      - BB_max_lon=${BB_max_lon}
+      - BB_max_lat=${BB_max_lat}
     command: [/usr/src/app/setup_cron.sh]
     volumes:
       - ${HOST_DATA_VOLUME_PATH}:/data/
