@@ -1,10 +1,10 @@
 import os
 from data_pipeline import get_bods_data
 
-bb_min_lon = os.environ['BB_min_lon']
-bb_min_lat = os.environ['BB_min_lat']
-bb_max_lon = os.environ['BB_max_lon']
-bb_max_lat = os.environ['BB_max_lat']
+bb_min_lon = os.environ['BB_MIN_LON']
+bb_min_lat = os.environ['BB_MIN_LAT']
+bb_max_lon = os.environ['BB_MAX_LON']
+bb_max_lat = os.environ['BB_MAX_LAT']
 
 df, retrieval_time = get_bods_data(bb_min_lon, bb_min_lat, bb_max_lon, bb_max_lat)
 
