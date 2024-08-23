@@ -1,8 +1,6 @@
-version: '3'
-
 services:
   bods:
-    image: dockerfile
+    image: bods-datacapture
     build: 
       dockerfile: dockerfile
     restart: always
